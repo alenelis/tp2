@@ -12,7 +12,9 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		Model::unguard();
+		Movie::create(['name' => 'Baywatch', 'detail' => 'Guardianes de la bahía.']);
+		
+//		Model::unguard();
 
 		// $this->call('UserTableSeeder');
 	}

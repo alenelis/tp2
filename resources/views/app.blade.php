@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
+	<title>Trabajo practico 2 Base de datos</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
