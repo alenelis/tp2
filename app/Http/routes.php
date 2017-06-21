@@ -15,7 +15,12 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::get('/movies', 'MoviesController@index');
+Route::post('/movies/create', 'MoviesController@create');
+Route::get('/users/change', 'UsersController@change');
+Route::post('/users/update', 'UsersController@update');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
-]);
+	]);
