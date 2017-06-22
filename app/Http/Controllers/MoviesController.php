@@ -8,6 +8,7 @@ use App\Movie;
 
 class MoviesController extends Controller
 {
+    use DB;
     /**
      * Create a new controller instance.
      *
