@@ -17,10 +17,10 @@
 		@foreach ($watched as $watch)
 		<tr>
 			<td>
-				{{$watch->uno}}
+				{{$watch->Uno}}
 			</td>
 			<td>
-				{{$watch->dos}}
+				{{$watch->Dos}}
 			</td>
 		</tr>
 		@endforeach
