@@ -14,13 +14,23 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		DB::table('movies')->insert([
-			['name' => 'El Padrino', 'detail' => 'Alpachino, etc.', 'created_at' => \Carbon\Carbon::now()]
-			,['name' => 'Pulp Fiction', 'detail' => 'Ficción, etc.', 'created_at' => \Carbon\Carbon::now()]
-			,['name' => 'Batman', 'detail' => 'El vengador!!', 'created_at' => \Carbon\Carbon::now()]
-			,['name' => 'Fight Club', 'detail' => 'Pelea, Pelea!!', 'created_at' => \Carbon\Carbon::now()]
-			,['name' => 'Inception', 'detail' => 'Que viaje!!', 'created_at' => \Carbon\Carbon::now()]
+			['name' => 'El Padrino', 'detail' => 'Alpachino, etc.'
+				, 'updated_at' => \Carbon\Carbon::now()
+				, 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Pulp Fiction', 'detail' => 'Ficción, etc.'
+				, 'updated_at' => \Carbon\Carbon::now()
+				, 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Batman', 'detail' => 'El vengador!!'
+				, 'updated_at' => \Carbon\Carbon::now()
+				, 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Fight Club', 'detail' => 'Pelea, Pelea!!'
+				, 'updated_at' => \Carbon\Carbon::now()
+				, 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Inception', 'detail' => 'Que viaje!!'
+				, 'updated_at' => \Carbon\Carbon::now()
+				, 'created_at' => \Carbon\Carbon::now()]
 		]);
-
+/*
 		DB::table('movies_users')->insert([
 		 ['users_id' => 1, 'movies_id' => 1]
 		, ['users_id' => 1, 'movies_id' => 2]
@@ -32,12 +42,13 @@ class DatabaseSeeder extends Seeder {
 		, ['users_id' => 5, 'movies_id' => 3]
 		, ['users_id' => 5, 'movies_id' => 4]
 	]);
-
+*/
 	DB::table('movies')->insert([
 		['name' => 'Alejandro'
 		, 'lastname' => 'Herrera'
 		, 'email' => 'ale@mail.com'
 		, 'password' => bcrypt("alejandro")
+		, 'updated_at' => \Carbon\Carbon::now()
 		, 'created_at' => \Carbon\Carbon::now()]
 	]);
 /*
