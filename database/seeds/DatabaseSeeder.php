@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder {
 				, 'updated_at' => \Carbon\Carbon::now()
 				, 'created_at' => \Carbon\Carbon::now()]
 		]);
-/*
+
 		DB::table('movies_users')->insert([
 		 ['users_id' => 1, 'movies_id' => 1]
 		, ['users_id' => 1, 'movies_id' => 2]
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder {
 		, ['users_id' => 5, 'movies_id' => 3]
 		, ['users_id' => 5, 'movies_id' => 4]
 	]);
-*/
+
 //Crear usuarios
 	DB::table('users')->insert([
 		['name' => 'Alejandro'
@@ -75,16 +75,6 @@ class DatabaseSeeder extends Seeder {
 			]
 
 		);
-
-		MoviesUsers::create(['users_id' => 1, 'movies_id' => 1);
-		MoviesUsers::create(['users_id' => 1, 'movies_id' => 2);
-		MoviesUsers::create(['users_id' => 2, 'movies_id' => 1);
-		MoviesUsers::create(['users_id' => 2, 'movies_id' => 2);
-		MoviesUsers::create(['users_id' => 3, 'movies_id' => 3);
-		MoviesUsers::create(['users_id' => 3, 'movies_id' => 4);
-		MoviesUsers::create(['users_id' => 4, 'movies_id' => 3);
-		MoviesUsers::create(['users_id' => 5, 'movies_id' => 3);
-		MoviesUsers::create(['users_id' => 5, 'movies_id' => 4);
 
 //		Model::unguard();
 
