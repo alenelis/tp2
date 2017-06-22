@@ -1,8 +1,6 @@
-<?php
+<?php namespace App;
 
-namespace App;
-
-class Movie extends base
+class Movie extends Base
 {
 
     /**
