@@ -43,6 +43,7 @@ class DatabaseSeeder extends Seeder {
 		, ['users_id' => 5, 'movies_id' => 4]
 	]);
 */
+//Crear usuarios
 	DB::table('users')->insert([
 		['name' => 'Alejandro'
 		, 'lastname' => 'Herrera'
@@ -50,14 +51,30 @@ class DatabaseSeeder extends Seeder {
 		, 'password' => bcrypt("alejandro")
 		, 'updated_at' => \Carbon\Carbon::now()
 		, 'created_at' => \Carbon\Carbon::now()]
-	]);
-/*
-Crear usuarios
-		INSERT INTO users (, name, email,password) VALUES ('', '', '',);
-		INSERT INTO users (lastname, name, email) VALUES ('Perez', 'Juan', 'juan@mail.com');
-		INSERT INTO users (lastname, name, email)  VALUES ('Lopez', 'Maria', 'maria@mail.com');
-		INSERT INTO users (lastname, name, email)  VALUES ('Dougan', 'Vanesa', 'vane@mail.com');
+			]
+			,['name' => 'Juan'
+			, 'lastname' => 'Perez'
+			, 'email' => 'juan@mail.com'
+			, 'password' => bcrypt("juan")
+			, 'updated_at' => \Carbon\Carbon::now()
+			, 'created_at' => \Carbon\Carbon::now()]
+			]
+			,['name' => 'Maria'
+			, 'lastname' => 'Lopez'
+			, 'email' => 'maria@mail.com'
+			, 'password' => bcrypt("maria")
+			, 'updated_at' => \Carbon\Carbon::now()
+			, 'created_at' => \Carbon\Carbon::now()]
+			]
+			,['name' => 'Vanesa'
+			, 'lastname' => 'Dougan'
+			, 'email' => 'vanesa@mail.com'
+			, 'password' => bcrypt("vanesa")
+			, 'updated_at' => \Carbon\Carbon::now()
+			, 'created_at' => \Carbon\Carbon::now()]
+			]
 
+		);
 
 		MoviesUsers::create(['users_id' => 1, 'movies_id' => 1);
 		MoviesUsers::create(['users_id' => 1, 'movies_id' => 2);
@@ -68,7 +85,6 @@ Crear usuarios
 		MoviesUsers::create(['users_id' => 4, 'movies_id' => 3);
 		MoviesUsers::create(['users_id' => 5, 'movies_id' => 3);
 		MoviesUsers::create(['users_id' => 5, 'movies_id' => 4);
-*/
 
 //		Model::unguard();
 

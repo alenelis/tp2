@@ -17,8 +17,8 @@ class CreateMoviesUsersTable extends Migration
       Schema::create('movies_users', function (Blueprint $table) {
         $table->integer('movies_id')->unsigned();
         $table->integer('users_id')->unsigned();
-        $table->timestamps();
-        $table->softDeletes();
+//        $table->timestamps();
+//        $table->softDeletes();
       });
     }
 
