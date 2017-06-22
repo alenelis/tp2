@@ -49,8 +49,6 @@ class MoviesController extends Controller
               WHERE mu2.users_id = u1.id
             )
           )") );
-dd($watched);
-return;
       return view('movies.watched', compact('watched'));
     }
 
