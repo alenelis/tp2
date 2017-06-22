@@ -58,22 +58,18 @@ class DatabaseSeeder extends Seeder {
 			, 'password' => bcrypt("juan")
 			, 'updated_at' => \Carbon\Carbon::now()
 			, 'created_at' => \Carbon\Carbon::now()]
-			]
 			,['name' => 'Maria'
 			, 'lastname' => 'Lopez'
 			, 'email' => 'maria@mail.com'
 			, 'password' => bcrypt("maria123")
 			, 'updated_at' => \Carbon\Carbon::now()
 			, 'created_at' => \Carbon\Carbon::now()]
-			]
 			,['name' => 'Vanesa'
 			, 'lastname' => 'Dougan'
 			, 'email' => 'vanesa@mail.com'
 			, 'password' => bcrypt("vanesa123")
 			, 'updated_at' => \Carbon\Carbon::now()
 			, 'created_at' => \Carbon\Carbon::now()]
-			]
-
 		);
 
 //		Model::unguard();
