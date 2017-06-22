@@ -35,7 +35,7 @@
 				<ul class="nav navbar-nav">
 					<li><a href="{{ url('/') }}">Home</a></li>
 					<li><a href="{{ url('/movies') }}">Películas</a></li>
-					<li><a href="{{ url('/movies/watshed') }}">Vistas por</a></li>
+					<li><a href="{{ url('/movies/watched') }}">Vistas por</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
