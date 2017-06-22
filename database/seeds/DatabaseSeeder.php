@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class DatabaseSeeder extends Seeder {
 
@@ -13,11 +14,11 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		DB::table('movies')->insert([
-			['name' => 'El Padrino', 'detail' => 'Alpachino, etc.']
-			,['name' => 'Pulp Fiction', 'detail' => 'Ficción, etc.']
-			,['name' => 'Batman', 'detail' => 'El vengador!!']
-			,['name' => 'Fight Club', 'detail' => 'Pelea, Pelea!!']
-			,['name' => 'Inception', 'detail' => 'Que viaje!!']
+			['name' => 'El Padrino', 'detail' => 'Alpachino, etc.', 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Pulp Fiction', 'detail' => 'Ficción, etc.', 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Batman', 'detail' => 'El vengador!!', 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Fight Club', 'detail' => 'Pelea, Pelea!!', 'created_at' => \Carbon\Carbon::now()]
+			,['name' => 'Inception', 'detail' => 'Que viaje!!', 'created_at' => \Carbon\Carbon::now()]
 		]);
 
 		DB::table('movies_users')->insert([
@@ -32,9 +33,16 @@ class DatabaseSeeder extends Seeder {
 		, ['users_id' => 5, 'movies_id' => 4]
 	]);
 
+	DB::table('movies')->insert([
+		['name' => 'Alejandro'
+		, 'lastname' => 'Herrera'
+		, 'email' => 'ale@mail.com'
+		, 'password' => bcrypt("alejandro")
+		, 'created_at' => \Carbon\Carbon::now()]
+	]);
 /*
 Crear usuarios
-		INSERT INTO users (lastname, name, email) VALUES ('Herrera', 'Alejandro', 'ale@mail.com');
+		INSERT INTO users (, name, email,password) VALUES ('', '', '',);
 		INSERT INTO users (lastname, name, email) VALUES ('Perez', 'Juan', 'juan@mail.com');
 		INSERT INTO users (lastname, name, email)  VALUES ('Lopez', 'Maria', 'maria@mail.com');
 		INSERT INTO users (lastname, name, email)  VALUES ('Dougan', 'Vanesa', 'vane@mail.com');
