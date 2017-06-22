@@ -31,18 +31,6 @@ class DatabaseSeeder extends Seeder {
 				, 'created_at' => \Carbon\Carbon::now()]
 		]);
 
-		DB::table('movies_users')->insert([
-		 ['users_id' => 1, 'movies_id' => 1]
-		, ['users_id' => 1, 'movies_id' => 2]
-		, ['users_id' => 2, 'movies_id' => 1]
-		, ['users_id' => 2, 'movies_id' => 2]
-		, ['users_id' => 3, 'movies_id' => 3]
-		, ['users_id' => 3, 'movies_id' => 4]
-		, ['users_id' => 4, 'movies_id' => 3]
-		, ['users_id' => 5, 'movies_id' => 3]
-		, ['users_id' => 5, 'movies_id' => 4]
-	]);
-
 //Crear usuarios
 	DB::table('users')->insert([
 		['name' => 'Alejandro'
@@ -70,8 +58,21 @@ class DatabaseSeeder extends Seeder {
 			, 'password' => bcrypt("vanesa123")
 			, 'updated_at' => \Carbon\Carbon::now()
 			, 'created_at' => \Carbon\Carbon::now()]
-		);
+		]);
 
+
+
+				DB::table('movies_users')->insert([
+				 ['users_id' => 1, 'movies_id' => 1]
+				, ['users_id' => 1, 'movies_id' => 2]
+				, ['users_id' => 2, 'movies_id' => 1]
+				, ['users_id' => 2, 'movies_id' => 2]
+				, ['users_id' => 3, 'movies_id' => 3]
+				, ['users_id' => 3, 'movies_id' => 4]
+				, ['users_id' => 4, 'movies_id' => 3]
+				, ['users_id' => 5, 'movies_id' => 3]
+				, ['users_id' => 5, 'movies_id' => 4]
+			]);
 //		Model::unguard();
 
 		// $this->call('UserTableSeeder');
