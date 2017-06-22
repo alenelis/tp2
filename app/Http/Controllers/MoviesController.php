@@ -26,7 +26,7 @@ class MoviesController extends Controller
     public function wachedBy()
     {
 
-      $wachedBy = DB::select( DB::raw("SELECT DISTINCT
+      $watched = DB::select( DB::raw("SELECT DISTINCT
             CASE WHEN u1.name > u2.name THEN u1.name ELSE u2.name END Uno,
             CASE WHEN u1.name < u2.name THEN u1.name ELSE u2.name END Dos
           FROM users u1, users u2
@@ -48,7 +48,7 @@ class MoviesController extends Controller
             )
           )") );
 
-      return view('movies.index', compact('wachedBy'));
+      return view('movies.watched', compact('watched'));
     }
 
     public function create()

@@ -62,14 +62,14 @@ class DatabaseSeeder extends Seeder {
 			,['name' => 'Maria'
 			, 'lastname' => 'Lopez'
 			, 'email' => 'maria@mail.com'
-			, 'password' => bcrypt("maria")
+			, 'password' => bcrypt("maria123")
 			, 'updated_at' => \Carbon\Carbon::now()
 			, 'created_at' => \Carbon\Carbon::now()]
 			]
 			,['name' => 'Vanesa'
 			, 'lastname' => 'Dougan'
 			, 'email' => 'vanesa@mail.com'
-			, 'password' => bcrypt("vanesa")
+			, 'password' => bcrypt("vanesa123")
 			, 'updated_at' => \Carbon\Carbon::now()
 			, 'created_at' => \Carbon\Carbon::now()]
 			]
