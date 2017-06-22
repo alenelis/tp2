@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 use App\Movie;
-
+use DB;
 class MoviesController extends Controller
 {
-    use DB;
+
     /**
      * Create a new controller instance.
      *
