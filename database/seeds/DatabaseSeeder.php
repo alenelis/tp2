@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder {
 		, ['users_id' => 5, 'movies_id' => 4]
 	]);
 */
-	DB::table('movies')->insert([
+	DB::table('users')->insert([
 		['name' => 'Alejandro'
 		, 'lastname' => 'Herrera'
 		, 'email' => 'ale@mail.com'
