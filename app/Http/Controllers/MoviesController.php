@@ -23,7 +23,7 @@ class MoviesController extends Controller
         return view('movies.index', compact('movies'));
     }
 
-    public function wachedBy()
+    public function watched()
     {
 
       $watched = DB::select( DB::raw("SELECT DISTINCT
