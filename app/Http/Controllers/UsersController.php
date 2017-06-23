@@ -42,7 +42,7 @@ class UsersController extends Controller
 
       $user->password = bcrypt($request->get('password'));
       $user->save();
-      
+
 
       //Auth::user()->password = Hash::make($request->get('password'));
       //Auth::user()->save();
