@@ -38,10 +38,19 @@
 		</style>
 	</head>
 	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+						<ul class="nav navbar-nav">
+							<li><a href="{{ url('/home') }}">Login</a></li>
+						</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="container">
 			<div class="content">
 				<div class="title">TP 2 DB</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="quote"> Vanesa Dougan, Alejandro Herrera y Alejandro Nelis </div>
 			</div>
 		</div>
 	</body>
