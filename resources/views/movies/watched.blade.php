@@ -17,9 +17,7 @@
 		@foreach ($watched as $watch)
 		<tr>
 			<td>
-				{{$watch->uno}}
-			</td>
-			<td>
+				<{{$watch->uno}}>
 				{{$watch->dos}}
 			</td>
 		</tr>
